@@ -1,0 +1,13 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "forge_fluid"
+	},
+	"variants": {
+		"normal": [{
+			"custom": {
+				"fluid": "my_fluid"
+			}
+		}]
+	}
+}

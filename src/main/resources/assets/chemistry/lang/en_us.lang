@@ -1,0 +1,20 @@
+﻿# Items
+chemistry.orthor_sulfur.name=Orthorhombic Sulfur
+chemistry.monoclinic_sulfur.name=Monoclinic Sulfur
+chemistry.rubbery_sulfur.name=Rubbery Sulfur
+
+# Blocks
+tile.sulfur_block.orthorhombic.name=Orthorhombic Sulfur Block
+tile.sulfur_block.monoclinic.name=Monoclinic Sulfur Block
+tile.sulfur_block.rubbery.name=Rubbery Sulfur Block
+tile.chemistry.lime_stone.name=Lime Stone
+tile.chemistry.bauxite.name=Bauxite
+tile.chemistry.fluorite.name=Fluorite
+tile.chemistry.pyrolusite.name=Pyrolusite
+tile.chemistry.rhodochrosite.name=Rhodochrosite
+tile.chemistry.chalcopyrite.name=Chalcopyrite
+tile.chemistry.chalcocite.name=Chalcocite
+tile.chemistry.sphalerite.name=Sphalerite
+
+# Creative Tabs
+itemGroup.chemistry.ore=Chemistry Ore
