@@ -1,4 +1,4 @@
-package chemistry.Item.Simple_Subs;
+package chemistry.Item.Ore;
 
 import java.util.List;
 
@@ -14,48 +14,30 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Sulfur extends Item{
+public class Crashed_Ore extends Item {
 	
-	public Sulfur() {
+	public Crashed_Ore() {
 		super();
 		
-		// Metadata
 		setHasSubtypes(true);
 		setMaxDamage(0);
 		
-		setRegistryName("sulfur");
-		setCreativeTab(CreativeTabs.MATERIALS);
-		setUnlocalizedName(chemistry.MOD_ID + "." + "orthor_sulfur");
+		setRegistryName("crashed_ore");
+		setCreativeTab(chemistry.CHEMISTRY_ORE);
+		setUnlocalizedName(chemistry.MOD_ID + "." + "crashed_ore");
 		setMaxStackSize(64);
 	}
 	
-	
-	// □このメソッド多分いらない
-	public String getRegistryName(ItemStack stack) {
-		switch(stack.getMetadata()) {
-		case 0:
-			return "orthor_sulfur";
-		case 1:
-			return "monoclinic_sulfur";
-		case 2:
-			return "rubbery_sulfur";
-		}
-		
-		return "orthor_sulfur";
-	}
-	
 	public String getUnlocalizedName(ItemStack stack) {
-		
 		String ULName = null;
 		switch(stack.getMetadata()) {
 		case 0:
-			ULName = "orthor_sulfur";
+			// □黄銅鉱を砕いたもの
+			ULName = "crashed_chalcopyrite";
 			break;
 		case 1:
-			ULName = "monoclinic_sulfur";
-			break;
-		case 2:
-			ULName = "rubbery_sulfur";
+			// □閃亜鉛鉱を砕いたもの
+			ULName = "crashed_sphalerite";
 			break;
 		}
 		
@@ -64,17 +46,22 @@ public class Sulfur extends Item{
 	
 	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
 		if(this.isInCreativeTab(tab)) {
-			for(int i = 0; i < 3; i++) {
+			for(int i = 0; i < 2; i++) {
 				items.add(new ItemStack(this, 1, i));
 			}
 		}
 	}
 	
-	// add Information to tooltip
+	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void addInformation(ItemStack stack, World world, List<String> tooltip, ITooltipFlag flag) {
-		tooltip.add("S");
+		switch(stack.getMetadata()) {
+		case 0:
+			break;
+		case 1:
+			break;
+		}
 	}
-	
+
 }

@@ -60,6 +60,7 @@ public final class EventSubscriber {
 		// item
 		final Item[] items = {
 				ModItems.SULFUR,
+				ModItems.CRASHED_ORE,
 				
 				// fluid item
 				ModItems.NaOHaqBucket

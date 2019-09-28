@@ -36,6 +36,8 @@ public class ModelRegistrationHandler {
 		registerModel(ModItems.SULFUR, 0);
 		registerModel(ModItems.SULFUR, 1);
 		registerModel(ModItems.SULFUR, 2);
+		registerModel(ModItems.CRASHED_ORE, 0);
+		registerModel(ModItems.CRASHED_ORE, 1);
 	}
 	
 	// 1モデル登録を簡単にするためのメソッド
